@@ -1281,9 +1281,12 @@
       "skillRatingComment": "One or two Average (+1).",
       "skillChoiceComment": "For a nameless NPC, all you really need is two or three skills based on their role in the scene. Your average security guard might have Fight and Shoot, while your average clerk might only have Lore.",
       "maxStunts": 0,
-      "stuntComment": "",
+      "stuntComment": "Nameless NPCs have no stunts.",
       "stressMax": 0,
-      "bothStressTypes": false
+      "bothStressTypes": false,
+      "stressComment": "No stress boxes—a one shift hit is enough to take them out.",
+      "maxConsequence": 0,
+      "consequenceComment": "Nameless NPCs have no consequences."
     },
     {
       "id": 2,
@@ -1298,9 +1301,12 @@
       "skillRatingComment": "One Fair (+2), and one or two Average (+1).",
       "skillChoiceComment": "For a nameless NPC, all you really need is two or three skills based on their role in the scene. Your average security guard might have Fight and Shoot, while your average clerk might only have Lore.",
       "maxStunts": 0,
-      "stuntComment": "",
+      "stuntComment": "Nameless NPCs have no stunts.",
       "stressMax": 1,
-      "bothStressTypes": false
+      "bothStressTypes": false,
+      "stressComment": "One stress box (e.g. 1[ ])—a two shift hit is enough to take them out.",
+      "maxConsequence": 0,
+      "consequenceComment": "Nameless NPCs have no consequences."
     },
     {
       "id": 3,
@@ -1315,9 +1321,12 @@
       "skillRatingComment": "One Good (+3), one Fair (+2), and one or two Average (+1).",
       "skillChoiceComment": "For a nameless NPC, all you really need is two or three skills based on their role in the scene. Your average security guard might have Fight and Shoot, while your average clerk might only have Lore.",
       "maxStunts": 0,
-      "stuntComment": "",
+      "stuntComment": "Nameless NPCs have no stunts.",
       "stressMax": 2,
-      "bothStressTypes": false
+      "bothStressTypes": false,
+      "stressComment": "Two stress boxes (e.g. 1[ ], 2[ ])—a three shift hit is enough to take them out.",
+      "maxConsequence": 0,
+      "consequenceComment": "Nameless NPCs have no consequences."
     },
     {
       "id": 4,
@@ -1334,7 +1343,10 @@
       "maxStunts": 1,
       "stuntComment": "Supporting NPCs can have up to one stunt.",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "If they have a skill that entitles them to bonus stress boxes, award those as well.",
+      "maxConsequence": 4,
+      "consequenceComment": "They have one mild consequence and, if you want them to be especially tough, one moderate consequence."
     },
     {
       "id": 5,
@@ -1351,7 +1363,10 @@
       "maxStunts": 4,
       "stuntComment": "A Main NPC can have a full selection of stunts",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "They follow all the same Stress rules as a PC.",
+      "maxConsequence": 6,
+      "consequenceComment": "They follow all the same Consequence rules as a PC."
     },
     {
       "id": 6,
@@ -1359,7 +1374,7 @@
       "name": "PC",
       "url": "https://fate-srd.com/fate-core/character-creation",
       "competence": "Player characters should be exceptional and interesting. They could very easily find success in less exciting situations than those that come their way in play.",
-      "purpose": "",
+      "purpose": "Player characters are the heroes and protagonists of the story. They are meant to be controlled by players.",
       "maxAspects": 5,
       "aspectComment": "The best aspects are double-edged, say more than one thing, and keep the phrasing simple.",
       "maxSkillRating": 4,
@@ -1368,7 +1383,10 @@
       "maxStunts": 3,
       "stuntComment": "You get three stunts for free, and you can take up to two more stunts at the cost of lowering your refresh by one each.",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "Every PC has two different stress tracks. The physical stress track deals with physical harm, and the mental stress track mitigates mental harm. The more boxes in a stress track, the more resilient the character is in that regard. By default, a character has two boxes in each stress track.",
+      "maxConsequence": 6,
+      "consequenceComment": "Every PC also has three consequence slots. One is mild, one is moderate, and the last one is severe. Unlike stress, these aren’t classified as either physical or mental—any of them can apply to any type of harm. As mentioned above, consequences are the injuries and traumas you can’t just shake off after the dust settles."
     },
     {
       "id": 7,
@@ -1385,7 +1403,10 @@
       "maxStunts": 2,
       "stuntComment": "Threats need at least one stunt that they can use to make the PCs want to deal with them. A really tough threat could also have a stunt that makes her tougher, giving her an Armor rating or extra stress boxes.",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "Physical threats have large physical stress tracks because of their high Physique, while social threats have similarly large mental stress tracks because of their high Will. If you’re using Fate rules that don’t grant additional stress boxes for high skill ratings, consider giving the threat a stunt that does so.",
+      "maxConsequence": 4,
+      "consequenceComment": "All threats have at least a mild consequence slot; particularly tough ones also have a moderate slot."
     },
     {
       "id": 8,
@@ -1402,7 +1423,10 @@
       "maxStunts": 3,
       "stuntComment": "A hitter always has, at the very least, a stunt that confers Weapon:2 on her primary attack. If you want to make her particularly dangerous, give her a stunt that makes her harder to spot too. Another excellent type of stunt to give a hitter is a way to hit really hard with a non-standard skill under the right circumstances; this way, the hitter can do her job, but becomes less effective when confronted directly.",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "Most hitters will have the bare minimum stress track.",
+      "maxConsequence": 2,
+      "consequenceComment": "If you want a hitter to be particularly important or nasty, give her a mild consequence slot. Otherwise, don’t give her any consequence slots. Hitters show up, hit hard, and die off quickly."
     },
     {
       "id": 9,
@@ -1419,7 +1443,10 @@
       "maxStunts": 3,
       "stuntComment": "A boss always has at least one stunt, and as many as three. Create stunts that make the boss memorable, stunts that bring in more bad guys to fight, stunts that make the boss hard to deal with, and stunts that represent her social status or allies.",
       "stressMax": 4,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "Bosses have stress tracks of varying lengths based on their skills.",
+      "maxConsequence": 6,
+      "consequenceComment": "All bosses have at least a mild and a moderate consequence slot, and a particularly nasty boss has a severe consequence slot too."
     },
     {
       "id": 10,
@@ -1429,14 +1456,17 @@
       "competence": "When you want to fill your scene with enemies, but you don’t want the complexity of adding more hitters, threats, or bosses, then fillers are what you need.",
       "purpose": "Fillers are easy to run and keep track of, and they let the PCs feel like badasses as they take down hordes of bad guys.",
       "maxAspects": 1,
-      "aspectComment": "Threats have a high concept and a trouble. If a threat’s particularly important, give her a third aspect. Emphasize her physical size, toughness, immovability, or stubbornness. Give her an Achilles’ heel that the PCs can exploit.",
+      "aspectComment": "Give your filler enemy a name that encapsulates its function in the scene, like Mob Enforcer, Crazed Velociraptor, or Flamethrower Turret. A filler’s name is an aspect, and its only aspect.",
       "maxSkillRating": 1,
       "skillRatingComment": "An Average filler has one Average (+1) skill.",
       "skillChoiceComment": "You can use skills from Fate Core or whatever Fate game you’re playing, or you can make up brand-new skills specific to your fillers. Those mob enforcers might have Fair (+2) Tommy Guns, while the crazed velociraptors might have Good (+3) Claws & Fangs and Average (+1) Dodge. If a filler enemy ever does something that isn’t covered by its skills, it rolls at Mediocre (+0) or it automatically fails (if that would be simpler).",
       "maxStunts": 0,
       "stuntComment": "Fillers don’t get stunts. They exist to be simple, and stunts make them more complex than they need to be. You can, at your option, make them dangerous fillers, giving them Weapon:1.",
       "stressMax": 1,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "A filler has one 1-stress box per quality step—so a Good filler has three 1-stress boxes, for example. Unlike characters and other types of enemies, a filler can mark off as many of its stress boxes as it likes to absorb a single hit. So, if a filler takes a 2-stress hit, it can mark off two of its stress boxes.",
+      "maxConsequence": 0,
+      "consequenceComment": "Fillers never have consequence slots."
     },
     {
       "id": 11,
@@ -1446,31 +1476,37 @@
       "competence": "When you want to fill your scene with enemies, but you don’t want the complexity of adding more hitters, threats, or bosses, then fillers are what you need.",
       "purpose": "Fillers are easy to run and keep track of, and they let the PCs feel like badasses as they take down hordes of bad guys.",
       "maxAspects": 1,
-      "aspectComment": "Threats have a high concept and a trouble. If a threat’s particularly important, give her a third aspect. Emphasize her physical size, toughness, immovability, or stubbornness. Give her an Achilles’ heel that the PCs can exploit.",
+      "aspectComment": "Give your filler enemy a name that encapsulates its function in the scene, like Mob Enforcer, Crazed Velociraptor, or Flamethrower Turret. A filler’s name is an aspect, and its only aspect.",
       "maxSkillRating": 2,
       "skillRatingComment": "A Fair filler has one Fair (+2) skill.",
       "skillChoiceComment": "You can use skills from Fate Core or whatever Fate game you’re playing, or you can make up brand-new skills specific to your fillers. Those mob enforcers might have Fair (+2) Tommy Guns, while the crazed velociraptors might have Good (+3) Claws & Fangs and Average (+1) Dodge. If a filler enemy ever does something that isn’t covered by its skills, it rolls at Mediocre (+0) or it automatically fails (if that would be simpler).",
       "maxStunts": 0,
       "stuntComment": "Fillers don’t get stunts. They exist to be simple, and stunts make them more complex than they need to be. You can, at your option, make them dangerous fillers, giving them Weapon:1.",
       "stressMax": 1,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "A filler has one 1-stress box per quality step—so a Good filler has three 1-stress boxes, for example. Unlike characters and other types of enemies, a filler can mark off as many of its stress boxes as it likes to absorb a single hit. So, if a filler takes a 2-stress hit, it can mark off two of its stress boxes.",
+      "maxConsequence": 0,
+      "consequenceComment": "Fillers never have consequence slots."
     },
     {
       "id": 12,
       "characterTypeId": 3,
-      "name": "Filler (Fair)",
+      "name": "Filler (Good)",
       "url": "https://fate-srd.com/fate-adversary-toolkit/enemies#fillers",
       "competence": "When you want to fill your scene with enemies, but you don’t want the complexity of adding more hitters, threats, or bosses, then fillers are what you need.",
       "purpose": "Fillers are easy to run and keep track of, and they let the PCs feel like badasses as they take down hordes of bad guys.",
       "maxAspects": 1,
-      "aspectComment": "Threats have a high concept and a trouble. If a threat’s particularly important, give her a third aspect. Emphasize her physical size, toughness, immovability, or stubbornness. Give her an Achilles’ heel that the PCs can exploit.",
+      "aspectComment": "Give your filler enemy a name that encapsulates its function in the scene, like Mob Enforcer, Crazed Velociraptor, or Flamethrower Turret. A filler’s name is an aspect, and its only aspect.",
       "maxSkillRating": 3,
       "skillRatingComment": "A Good filler has one Good (+3) skill and one Average (+1) skill.",
       "skillChoiceComment": "You can use skills from Fate Core or whatever Fate game you’re playing, or you can make up brand-new skills specific to your fillers. Those mob enforcers might have Fair (+2) Tommy Guns, while the crazed velociraptors might have Good (+3) Claws & Fangs and Average (+1) Dodge. If a filler enemy ever does something that isn’t covered by its skills, it rolls at Mediocre (+0) or it automatically fails (if that would be simpler).",
       "maxStunts": 0,
       "stuntComment": "Fillers don’t get stunts. They exist to be simple, and stunts make them more complex than they need to be. You can, at your option, make them dangerous fillers, giving them Weapon:1.",
       "stressMax": 1,
-      "bothStressTypes": true
+      "bothStressTypes": true,
+      "stressComment": "A filler has one 1-stress box per quality step—so a Good filler has three 1-stress boxes, for example. Unlike characters and other types of enemies, a filler can mark off as many of its stress boxes as it likes to absorb a single hit. So, if a filler takes a 2-stress hit, it can mark off two of its stress boxes.",
+      "maxConsequence": 0,
+      "consequenceComment": "Fillers never have consequence slots."
     }
   ]
 }
